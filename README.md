@@ -37,4 +37,4 @@ build firmware:
 ```
 ---
 
-# See [MY_README](README.md) for more complete instructions.
+# See [MY_README](MY_README.md) for more complete instructions.
