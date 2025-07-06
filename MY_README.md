@@ -1,6 +1,6 @@
-# How to get everything working:
-### 1. Verify you can flash unmodified firmware
-Complete all the original instructions in the original [README](README.md) to verify you can successfully flash unmodified firmware. Some tips:
+# How to get everything working
+### 1. Verify you can flash the keyboard with unmodified firmware
+Complete all the instructions in the original [README](README.md) to verify you can successfully flash unmodified firmware. Some tips:
 - Install `west` with brew.
 - Install zephyr directly from https://docs.zephyrproject.org/latest/develop/toolchains/zephyr_sdk.html.
 - https://github.com/zephyrproject-rtos/zephyr/issues/1392#issuecomment-2314762284 
@@ -16,7 +16,7 @@ From `/app` run:
 ```
 west build -b keychron -p -- -DSHIELD=keychron_b1_us
 ```
-again after editing the files. This will generate a uf2 file in zmk/app/build/zephyr. This is the file that will be flashed onto the keyboard.
+This will generate a uf2 file in zmk/app/build/zephyr. This is the file that will be flashed onto the keyboard.
 
 ### 4. Flash onto keyboard
 Flash onto keyboard by following instructions in https://www.keychron.com/blogs/archived/how-to-use-the-launcher-web-app-or-manually-flash-firmware-for-your-b-pro-series-keyboard. Note: it doesn't matter if the uf2 file has a different name than what's currently on the keyboard. Dragging the uf2 onto the keyboard will still cause the keyboard to reboot with the new software (then complain about ejecting).
