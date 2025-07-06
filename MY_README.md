@@ -5,6 +5,7 @@ Complete all the instructions in the original [README](README.md) to verify you 
 - Install zephyr directly from https://docs.zephyrproject.org/latest/develop/toolchains/zephyr_sdk.html.
 - https://github.com/zephyrproject-rtos/zephyr/issues/1392#issuecomment-2314762284 
 - https://ibb.co/27BHS3GN from https://note.com/ryokucharyoku2/n/n70fae84f1898.
+- The file to patch is `0001-esb-nrf-fix.patch` not `001-esb-nrf-fix.patch`.
 - If flashing doesn't appear to be work, or is working inconsistently, try clicking "Reset Layout" in [Keychron Launcher](https://launcher.keychron.com/#/keymap) and then **stop** editing directly in Keychron Launcher. It seems to override values in the keymap.
 - Keychron Launcher can be used to verify the time of the last successful firmware flash (`Settings -> Device Info -> Current Version`).
 
