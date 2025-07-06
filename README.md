@@ -35,3 +35,6 @@ build firmware:
     cd app
     west build -b keychron -p -- -DSHIELD=keychron_b1_us
 ```
+---
+
+# See [MY_README](README.md) for more complete instructions.
