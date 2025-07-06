@@ -190,6 +190,359 @@
         #binding-cells =<1>;
     };
 
+    macros {
+        prev_tab: prev_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "PREV_TAB";
+            bindings
+                = <&macro_release &kp LCTRL>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp PG_UP>
+                , <&macro_release &kp LALT>
+                , <&macro_press &kp LCTRL>
+                ;
+        };
+        next_tab: next_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "NEXT_TAB";
+            bindings
+                = <&macro_release &kp LCTRL>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp PG_DN>
+                , <&macro_release &kp LALT>
+                , <&macro_press &kp LCTRL>
+                ;
+        };
+    };
+
+    behaviors {
+        kt_off: kt_off {
+            compatible = "zmk,behavior-key-toggle";
+            #binding-cells = <1>;
+            label = "KT_OFF";
+            toggle-mode = "off";
+        };
+        mac_a: mac_a {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_A";
+            bindings = <&kp A>, <&kp LA(A)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_b: mac_b {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_B";
+            bindings = <&kp B>, <&kp LA(B)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_c: mac_c {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_C";
+            bindings = <&kp C>, <&kp LA(C)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_d: mac_d {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_D";
+            bindings = <&kp D>, <&kp LA(D)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_e: mac_e {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_E";
+            bindings = <&kp E>, <&kp LA(E)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_f: mac_f {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_F";
+            bindings = <&kp F>, <&kp LA(F)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_g: mac_g {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_G";
+            bindings = <&kp G>, <&kp LA(G)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_h: mac_h {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_H";
+            bindings = <&kp H>, <&kp LA(H)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_i: mac_i {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_I";
+            bindings = <&kp I>, <&kp LA(I)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_j: mac_j {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_J";
+            bindings = <&kp J>, <&kp LA(J)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_k: mac_k {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_K";
+            bindings = <&kp K>, <&kp LA(K)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_l: mac_l {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_L";
+            bindings = <&kp L>, <&kp LA(L)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_m: mac_m {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_M";
+            bindings = <&kp M>, <&kp LA(M)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_n: mac_n {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_N";
+            bindings = <&kp N>, <&kp LA(N)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_o: mac_o {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_O";
+            bindings = <&kp O>, <&kp LA(O)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_p: mac_p {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_P";
+            bindings = <&kp P>, <&kp LA(P)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_q: mac_q {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_Q";
+            bindings = <&kp Q>, <&kp LA(Q)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_r: mac_r {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_R";
+            bindings = <&kp R>, <&kp LA(R)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_s: mac_s {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_S";
+            bindings = <&kp S>, <&kp LA(S)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_t: mac_t {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_T";
+            bindings = <&kp T>, <&kp LA(T)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_u: mac_u {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_U";
+            bindings = <&kp U>, <&kp LA(U)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_v: mac_v {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_V";
+            bindings = <&kp V>, <&kp LA(V)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_w: mac_w {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_W";
+            bindings = <&kp W>, <&kp LA(W)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_x: mac_x {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_X";
+            bindings = <&kp X>, <&kp LA(X)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_y: mac_y {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_Y";
+            bindings = <&kp Y>, <&kp LA(Y)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_z: mac_z {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_Z";
+            bindings = <&kp Z>, <&kp LA(Z)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_1: mac_1 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_1";
+            bindings = <&kp N1>, <&kp LA(N1)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_2: mac_2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_2";
+            bindings = <&kp N2>, <&kp LA(N2)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_3: mac_3 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_3";
+            bindings = <&kp N3>, <&kp LA(N3)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_4: mac_4 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_4";
+            bindings = <&kp N4>, <&kp LA(N4)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_5: mac_5 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_5";
+            bindings = <&kp N5>, <&kp LA(N5)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_6: mac_6 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_6";
+            bindings = <&kp N6>, <&kp LA(N6)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_7: mac_7 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_7";
+            bindings = <&kp N7>, <&kp LA(N7)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_8: mac_8 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_8";
+            bindings = <&kp N8>, <&kp LA(N8)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_9: mac_9 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_9";
+            bindings = <&kp N9>, <&kp LA(N9)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_0: mac_0 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_0";
+            bindings = <&kp N0>, <&kp LA(N0)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_lock: mac_lock {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_LOCK";
+            bindings = <&kp DEL>, <&kp LA(LS(L))>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_left_curly_2: mac_left_curly_2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_LEFT_CURLY_2";
+            bindings = <&kp A>, <&prev_tab>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        mac_left_curly_1: mac_left_curly_1 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_LEFT_CURLY_1";
+            bindings = <&kp LBKT>, <&mac_left_curly_2>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_right_curly_2: mac_right_curly_2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_RIGHT_CURLY_2";
+            bindings = <&kp A>, <&next_tab>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        mac_right_curly_1: mac_right_curly_1 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_RIGHT_CURLY_1";
+            bindings = <&kp RBKT>, <&mac_right_curly_2>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_right_curly: mac_right_curly {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_RIGHT_CURLY";
+            bindings = <&kp RBKT>, <&kp LA(PG_DN)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        mac_meta: mac_meta {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_META";
+            bindings = <&kp RCTRL>, <&mo 3>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        }; 
+        morph_BC: morph_BC {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "mBC";
+            bindings = <&kp B>, <&kp C>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
+        morph_ABC: morph_ABC {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "mABC";
+            bindings = <&kp A>, <&morph_BC>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+            keep-mods = <(MOD_RCTL)>;
+        };
+    };
+
 	keymap {
     	compatible = "zmk,keymap";
             //mac
@@ -218,15 +571,15 @@
         &none       &none                   &none                   &none                               &none
             >;
         };
-        //win
+        //win - Default Chromebook layer
         layer_two {
  		bindings = <
-        &kp ESC 	&kp F1 	               &kp F2 	                &kp F3 	                            &kp F4 	                &kp F5 	            &kp F6 	        &kp F7 	        &kp F8 	            &kp F9 	     &kp F10 	&kp F11 	         &kp F12 	         &kp DEL     
-        &kp GRAVE	&kp N1 	               &kp N2 	                &kp N3 	                            &kp N4 	                &kp N5 	            &kp N6 	        &kp N7 	        &kp N8 	            &kp N9 	     &kp N0     &kp MINUS 	         &kp EQUAL 	         &kp BSPC
-        &kp TAB 	&kp Q 	               &kp W                    &kp E 	                            &kp R 	                &kp T               &kp Y 	        &kp U 	        &kp I 	            &kp O 	     &kp P 		&kp LBKT 	         &kp RBKT 	         &kp BSLH 	 	
-        &kp CLCK 	&kp A 	               &kp S 	                &kp D 	                            &kp F 	                &kp G 	            &kp H 	        &kp J 	        &kp K 	            &kp L 	     &kp SEMI 	&kp SQT                      &kp RET
-        &kp LSHFT   &kp Z 	               &kp X 	                &kp C 	                            &kp V 	                &kp B 	            &kp N 	        &kp M 	        &kp COMMA           &kp DOT      &kp FSLH                                &kp RSHFT				
-        &kp LCTRL 	&kp LGUI               &kp LALT                      &kp SPACE              		                                                                            &kp RALT 	        &mo 3 		  &kp LEFT 	 &kp UP      &kp DOWN 	&kp RIGHT 	
+        &kp ESC 	&kp C_BRIGHTNESS_DEC   &kp C_BRIGHTNESS_INC     &kp F3 	                            &kp F4 	                &kp F5 	            &kp F6 	        &kp C_PREVIOUS  &kp C_PLAY_PAUSE    &kp C_NEXT  &kp C_MUTE  &kp C_VOLUME_DOWN    &kp C_VOLUME_UP 	 &mac_lock    
+        &kp GRAVE	&mac_1 	               &mac_2 	                &mac_3 	                            &mac_4 	                &mac_5 	            &mac_6 	        &mac_7 	        &mac_8 	            &mac_9 	     &mac_0     &kp MINUS 	         &kp EQUAL 	         &kp BSPC
+        &kp TAB 	&mac_q 	               &mac_w                   &mac_e 	                            &mac_r 	                &mac_t              &mac_y 	        &mac_u 	        &mac_i 	            &mac_o 	     &mac_p 	&mac_left_curly_1    &mac_right_curly_1  &kp BSLH 	 	
+        &kp CLCK 	&mac_a 	               &mac_s 	                &mac_d 	                            &mac_f 	                &mac_g 	            &mac_h 	        &mac_j 	        &mac_k 	            &mac_l 	     &kp SEMI 	&kp SQT                      &kp RET
+        &kp LSHFT   &mac_z 	               &mac_x 	                &mac_c 	                            &mac_v 	                &mac_b 	            &mac_n 	        &mac_m 	        &kp COMMA           &kp DOT      &kp FSLH                                &kp RSHFT				
+        &kp LALT 	&mac_meta              &kp LCTRL                      &kp SPACE              		                                                                            &kp RALT 	        &mo 3 		  &kp LEFT 	 &kp UP      &kp DOWN 	&kp RIGHT 	
         //
         &none       &out OUT_BLE           &out OUT_24G             &out OUT_CHG                        &out OUT_CHGD 
             >;
@@ -236,9 +589,23 @@
         bindings = < 
                     //f1                    //f2                    //f3                                //f4                        //f5            //f6              //f7            //f8              //f9        //f10           //f11                         //f12                     
         &trans  &kp C_BRIGHTNESS_DEC    &kp C_BRIGHTNESS_INC        &uc LG(TAB)                         &uc LG(E)               &kp C_AC_SEARCH     &uc LG(L)       &kp C_PREVIOUS  &kp C_PLAY_PAUSE    &kp C_NEXT  &kp C_MUTE  &kp C_VOLUME_DOWN           &kp C_VOLUME_UP      &trans   
-        &trans  &bt_pair_0 0 0          &bt_pair_1 0 0              &bt_pair_2 0 0                      &bt_pair_3 0 0          &trans              &trans          &trans          &trans              &trans      &trans      &trans                      &kp C_AL_CALC        &trans          
+        &trans  &bt_pair_0 0 0          &bt_pair_1 0 0              &bt_pair_2 0 0                      &bt_pair_3 0 0          &trans              &trans          &trans          &trans              &trans      &trans      &bootloader                 &kp C_AL_CALC        &trans          
         &trans  &trans                  &trans                      &trans                              &trans                  &trans              &trans          &trans          &kp INS             &trans      &trans      &trans                      &trans               &uc LG(LS(S))      
         &trans  &trans                  &trans                      &trans                              &trans                  &trans              &trans          &trans          &trans              &trans      &trans      &trans                              &trans  
+        &trans  &trans                  &trans                      &trans                              &trans                  &trans              &trans          &trans          &trans              &trans      &trans                                          &uc LG(DOT) 
+        &trans  &trans                  &trans                           &trans                                                                                                     &kp RCTRL           &trans      &kp LA(COMMA)    &kp LA(M)    &kp DOWN   &kp LA(B)    
+        //
+        &none   &none                   &none                       &none                               &none
+            >;
+        };
+        //win
+        layer_four {
+        bindings = < 
+                    //f1                    //f2                    //f3                                //f4                        //f5            //f6              //f7            //f8              //f9        //f10           //f11                         //f12                     
+        &trans  &kp C_BRIGHTNESS_DEC    &kp C_BRIGHTNESS_INC        &uc LG(TAB)                         &uc LG(E)               &kp C_AC_SEARCH     &uc LG(L)       &kp C_PREVIOUS  &kp C_PLAY_PAUSE    &kp C_NEXT  &kp C_MUTE  &kp C_VOLUME_DOWN           &kp C_VOLUME_UP      &trans   
+        &trans  &bt_pair_0 0 0          &bt_pair_1 0 0              &bt_pair_2 0 0                      &bt_pair_3 0 0          &trans              &trans          &trans          &trans              &trans      &trans      &trans                      &kp C_AL_CALC        &trans          
+        &trans  &trans                  &mac_w                      &trans                              &trans                  &mac_t              &trans          &trans          &kp INS             &trans      &trans      &trans                      &trans               &uc LG(LS(S))      
+        &trans  &kp X                   &trans                      &trans                              &trans                  &trans              &trans          &trans          &trans              &trans      &trans      &trans                              &trans  
         &trans  &trans                  &trans                      &trans                              &trans                  &trans              &trans          &trans          &trans              &trans      &trans                                          &uc LG(DOT) 
         &trans  &trans                  &trans                           &trans                                                                                                     &kp RCTRL           &trans      &kp HOME    &kp PG_UP    &kp PG_DN   &kp END    
         //
