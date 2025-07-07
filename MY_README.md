@@ -23,4 +23,4 @@ This will generate a uf2 file in zmk/app/build/zephyr. This is the file that wil
 Flash onto keyboard by following instructions in https://www.keychron.com/blogs/archived/how-to-use-the-launcher-web-app-or-manually-flash-firmware-for-your-b-pro-series-keyboard. Note: it doesn't matter if the uf2 file has a different name than what's currently on the keyboard. Dragging the uf2 onto the keyboard will still cause the keyboard to reboot with the new firmware (it will complain about ejecting, that's not a problem).
 
 ### 5. Verify
-Verify changes with [Keychron Launcher](https://launcher.keychron.com).
+Verify changes with [Keychron Launcher](https://launcher.keychron.com), or by just typing.
