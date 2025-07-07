@@ -1,6 +1,6 @@
 # How to get everything working
 ### 1. Verify you can flash the keyboard with unmodified firmware
-Complete all the instructions in the original [README](README.md) to verify you can successfully flash unmodified firmware. Some tips:
+Complete all the instructions in the original [README](README.md) to verify you can successfully build unmodified firmware. Some tips:
 - Install `west` with brew.
 - Install zephyr directly from https://docs.zephyrproject.org/latest/develop/toolchains/zephyr_sdk.html.
 - https://github.com/zephyrproject-rtos/zephyr/issues/1392#issuecomment-2314762284 
