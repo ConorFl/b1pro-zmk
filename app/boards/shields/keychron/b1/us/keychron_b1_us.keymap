@@ -218,12 +218,6 @@
     };
 
     behaviors {
-        kt_off: kt_off {
-            compatible = "zmk,behavior-key-toggle";
-            #binding-cells = <1>;
-            label = "KT_OFF";
-            toggle-mode = "off";
-        };
         mac_a: mac_a {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -270,7 +264,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             label = "MAC_G";
-            bindings = <&kp G>, <&kp LA(G)>;
+            bindings = <&kp G>, <&kp RET>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         mac_h: mac_h {
@@ -541,6 +535,20 @@
             mods = <(MOD_LCTL|MOD_RCTL)>;
             keep-mods = <(MOD_RCTL)>;
         };
+        mac_enter: mac_enter {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_ENTER";
+            bindings = <&kp RET>, <&kp LA(RET)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+        mac_fslh: mac_fslh {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            label = "MAC_FSLH";
+            bindings = <&kp FSLH>, <&kp LA(FSLH)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
     };
 
 	keymap {
@@ -577,8 +585,8 @@
         &kp ESC 	&kp C_BRIGHTNESS_DEC   &kp C_BRIGHTNESS_INC     &kp F3 	                            &kp F4 	                &kp F5 	            &kp F6 	        &kp C_PREVIOUS  &kp C_PLAY_PAUSE    &kp C_NEXT  &kp C_MUTE  &kp C_VOLUME_DOWN    &kp C_VOLUME_UP 	 &mac_lock    
         &kp GRAVE	&mac_1 	               &mac_2 	                &mac_3 	                            &mac_4 	                &mac_5 	            &mac_6 	        &mac_7 	        &mac_8 	            &mac_9 	     &mac_0     &kp MINUS 	         &kp EQUAL 	         &kp BSPC
         &kp TAB 	&mac_q 	               &mac_w                   &mac_e 	                            &mac_r 	                &mac_t              &mac_y 	        &mac_u 	        &mac_i 	            &mac_o 	     &mac_p 	&mac_left_curly_1    &mac_right_curly_1  &kp BSLH 	 	
-        &kp CLCK 	&mac_a 	               &mac_s 	                &mac_d 	                            &mac_f 	                &mac_g 	            &mac_h 	        &mac_j 	        &mac_k 	            &mac_l 	     &kp SEMI 	&kp SQT                      &kp RET
-        &kp LSHFT   &mac_z 	               &mac_x 	                &mac_c 	                            &mac_v 	                &mac_b 	            &mac_n 	        &mac_m 	        &kp COMMA           &kp DOT      &kp FSLH                                &kp RSHFT				
+        &kp CLCK 	&mac_a 	               &mac_s 	                &mac_d 	                            &mac_f 	                &mac_g 	            &mac_h 	        &mac_j 	        &mac_k 	            &mac_l 	     &kp SEMI 	&kp SQT                      &mac_enter
+        &kp LSHFT   &mac_z 	               &mac_x 	                &mac_c 	                            &mac_v 	                &mac_b 	            &mac_n 	        &mac_m 	        &kp COMMA           &kp DOT      &mac_fslh                               &kp RSHFT				
         &kp LALT 	&mac_meta              &kp LCTRL                      &kp SPACE              		                                                                            &kp RALT 	        &mo 3 		  &kp LEFT 	 &kp UP      &kp DOWN 	&kp RIGHT 	
         //
         &none       &out OUT_BLE           &out OUT_24G             &out OUT_CHG                        &out OUT_CHGD 
